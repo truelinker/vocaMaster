@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="annunciator_height_px">19</integer>
+
+    <integer name="screen_width">240</integer>
+    <integer name="screen_height">400</integer>
+    
+	<integer name="weather_font_size_1">0</integer>
+	<integer name="weather_font_size_2">0</integer>
+	<integer name="weather_text_width">0</integer>
+	
+	<integer name="subject_view_font_size_1">16</integer>
+	<integer name="subject_view_font_size_2">16</integer>
+	<integer name="subject_view_font_size_3">12</integer>
+	<integer name="subject_list_font_size_1">14</integer>
+	<integer name="subject_list_font_size_2">14</integer>
+	<integer name="subject_list_font_size_3">14</integer>
+	
+	<integer name="subject_view_text_width_1">260</integer>
+	<integer name="subject_view_text_width_2">260</integer>
+	<integer name="subject_view_text_width_3">260</integer>
+	<integer name="subject_list_text_width_1">123</integer>
+	<integer name="subject_list_text_width_2">123</integer>
+	<integer name="subject_list_text_width_3">123</integer>
+
+</resources>

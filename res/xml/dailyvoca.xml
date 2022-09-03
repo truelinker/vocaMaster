@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:minWidth="240px" 
+    android:minHeight="300px" 
+    android:updatePeriodMillis="60000" >
+    <!--
+    android:initialLayout="@layout/main"   
+    android:configure="com.rontab.fromtheday.FromTheDayConfigure" >
+    --> 
+</appwidget-provider>

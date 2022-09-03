@@ -1,0 +1,42 @@
+10
+
+dir
+0
+https://voca-master.googlecode.com/svn/trunk/res/xml
+https://voca-master.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be3494c7-06e9-f454-cb6b-9607218c55ad
+
+dailyvoca.xml
+file
+
+
+
+add
+
+preference_setting.xml
+file
+
+
+
+add
+

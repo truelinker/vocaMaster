@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout
+		android:id="@+id/steplist_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:keepScreenOn="true"
+        android:background="@drawable/winset_selectall_bg"
+        android:focusable="false"
+        android:clickable="false">
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@drawable/selector_text_primary"
+	        android:text="Choose a step" 
+	        android:paddingLeft="2dp"/>
+    </LinearLayout>
+
+	<ListView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/stepslist" />
+</LinearLayout>

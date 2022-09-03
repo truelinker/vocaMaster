@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:id="@+id/frame_layer"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView 
+			android:id="@+id/ImageView_Bg" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			> 
+	</ImageView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="@null"
+		android:layout_height="fill_parent" android:paddingLeft="18dip"
+		android:paddingRight="18dip" android:orientation="vertical">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dp" android:layout_weight="1"
+			android:layout_marginTop="20dp" android:orientation="horizontal"
+			android:gravity="center_vertical">
+			<TextView android:id="@+id/spell" 
+				android:ellipsize="marquee"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content" 
+				android:layout_weight="1"/> 
+				<!--  android:padding="10dip" style="@style/LookupTitle" />-->
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="0dp" android:layout_weight="1"
+			android:layout_marginTop="20dp">
+			<TextView android:id="@+id/mean"
+				android:ellipsize="marquee" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:textColor="@color/tw_color002" android:typeface="sans"
+				android:textSize="22dip" />
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="0dp" android:layout_weight="1"
+			android:paddingLeft="10.00dp" android:paddingRight="10.00dp"
+			android:background="@drawable/memo_bg_02_1">
+			<TextView android:id="@+id/extra_mean" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:gravity="center"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="@drawable/selector_text_primary"
+				android:textSize="16.00dp" android:inputType="none"
+				android:capitalize="sentences" android:includeFontPadding="false"
+				android:lineSpacingExtra="4.67dp" android:background="@null"
+				android:scrollbars="vertical" />
+		</RelativeLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dp" android:layout_weight="1"
+			android:orientation="vertical">
+
+			<FrameLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<Button android:id="@+id/check_mean" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center"
+					android:background="@drawable/shmean_button" />
+				<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"
+					android:stretchColumns="*">
+					<TableRow
+					android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1">
+						<Button android:id="@+id/memory" 
+								android:background="@drawable/yes_button"
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_gravity="center"
+            					android:layout_weight="1"/>
+						<Button android:id="@+id/forget" 
+								android:background="@drawable/no_button"
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_weight="1"
+            					android:layout_gravity="center"/>								
+
+					</TableRow>
+					<TableRow
+					android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1">					
+						<Button android:id="@+id/wed_dic" 
+								android:background="@drawable/dic_button" 
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_weight="1"
+            					android:layout_gravity="center"/>					
+						<Button android:id="@+id/wed_image" 
+								android:background="@drawable/image_button"  
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_weight="1"
+            					android:layout_gravity="center"/>
+					</TableRow>							
+				</TableLayout>
+			</FrameLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<ProgressBar android:id="@+id/progress_bar"
+			style="?android:attr/progressBarStyleHorizontal" android:gravity="top"
+			android:layout_width="fill_parent" android:layout_height="20dp"
+			android:max="100" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_gravity="center" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TextView android:id="@+id/wrong" android:layout_width="0dip"
+				android:layout_height="wrap_content" android:layout_weight="1" />
+			<TextView android:id="@+id/currect" android:layout_width="0dip"
+				android:layout_height="wrap_content" android:layout_weight="1" />
+			<TextView android:id="@+id/memodate" android:layout_width="0dip"
+				android:layout_height="wrap_content" android:layout_weight="1" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<!--
+		<SlidingDrawer android:id="@+id/slide_drawer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="horizontal" android:handle="@+id/handle"
+		android:content="@+id/content" android:bottomOffset="5px"> <TextView
+		style="@style/red_padded" android:layout_height="fill_parent"
+		android:layout_width="wrap_content" android:text="S\nl\ni\nd\ni\nn\ng"
+		android:id="@+id/handle" android:background="#0000FF"
+		android:gravity="center" /> <LinearLayout android:id="@id/content"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"> <WebView
+		android:id="@+id/webview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/> </LinearLayout> </SlidingDrawer>
+	-->
+</FrameLayout>

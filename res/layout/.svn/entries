@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://voca-master.googlecode.com/svn/trunk/res/layout
+https://voca-master.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be3494c7-06e9-f454-cb6b-9607218c55ad
+
+alert_dialog_text_entry.xml
+file
+
+
+
+add
+
+diaryedit.xml
+file
+
+
+
+add
+
+drawer.xml
+file
+
+
+
+add
+
+drawer_item.xml
+file
+
+
+
+add
+
+file_item.xml
+file
+
+
+
+add
+
+file_row.xml
+file
+
+
+
+add
+
+multichoice.xml
+file
+
+
+
+add
+
+music_library.xml
+file
+
+
+
+add
+
+preference_seekbar.xml
+file
+
+
+
+add
+
+showfile.xml
+file
+
+
+
+add
+
+step_list_item_image.xml
+file
+
+
+
+add
+
+steplist.xml
+file
+
+
+
+add
+
+translucent_background.xml
+file
+
+
+
+add
+

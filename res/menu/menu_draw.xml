@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<group android:id="@+id/MENU_ID_GROUP">
+			<item 
+			android:title="Add Voca" 
+			android:id="@+id/MENU_ID_ADDVOCA">
+			</item>
+			<item 
+			android:title="Del Voca" 
+			android:id="@+id/MENU_ID_DELVOCA">
+			</item>
+			<item 
+			android:title="Change Background" 
+			android:id="@+id/MENU_ID_BKIMAGE">
+			</item>
+			<item 
+			android:title="Settings" 
+			android:id="@+id/MENU_ID_SETTINGS">
+			</item>			
+	</group>
+</menu>

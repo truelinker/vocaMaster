@@ -1,0 +1,84 @@
+10
+
+dir
+0
+https://voca-master.googlecode.com/svn/trunk/res/values
+https://voca-master.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be3494c7-06e9-f454-cb6b-9607218c55ad
+
+arrays.xml
+file
+
+
+
+add
+
+color_tw.xml
+file
+
+
+
+add
+
+colors.xml
+file
+
+
+
+add
+
+fileendings.xml
+file
+
+
+
+add
+
+integers.xml
+file
+
+
+
+add
+
+strings.xml
+file
+
+
+
+add
+
+styles.xml
+file
+
+
+
+add
+
+themes.xml
+file
+
+
+
+add
+

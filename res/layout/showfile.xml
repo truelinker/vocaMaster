@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+		   <LinearLayout
+        android:id="@+id/create"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:keepScreenOn="true"
+        android:background="@drawable/selector_background"
+        android:focusable="true">
+	    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true" 
+            android:background="@drawable/btn_create_ss"/>
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@drawable/selector_text_primary"
+	        android:text="File    List"
+	        android:duplicateParentState="true" 
+	        android:paddingLeft="2dp"/>
+    </LinearLayout>	
+		<ListView 
+    		android:id="@+id/fileList"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"    		
+    		android:layout_gravity="center"
+    		android:gravity="center"
+    		android:drawSelectorOnTop="true"/>
+    		<!--  android:layout_height="?android:attr/listPreferredItemHeight"-->
+    		<!--  
+    		android:listSelector="@drawable/memo_bg_02_1" />-->
+    		<!--  
+	   		android:listSelector="@drawable/filelist_bg2" />-->	
+		<!--  
+					<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/ButtonEnterMorePets"
+		android:text="Add More Pets" android:layout_alignParentRight="true"></Button>-->
+</LinearLayout>

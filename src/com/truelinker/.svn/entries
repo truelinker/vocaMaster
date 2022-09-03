@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://voca-master.googlecode.com/svn/trunk/src/com/truelinker
+https://voca-master.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be3494c7-06e9-f454-cb6b-9607218c55ad
+
+filebrowser
+dir
+
+
+
+add
+
+service
+dir
+
+
+
+add
+
+voca_mem
+dir
+
+
+
+add
+

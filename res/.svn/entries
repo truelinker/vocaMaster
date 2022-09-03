@@ -1,0 +1,140 @@
+10
+
+dir
+0
+https://voca-master.googlecode.com/svn/trunk/res
+https://voca-master.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be3494c7-06e9-f454-cb6b-9607218c55ad
+
+drawable
+dir
+
+
+
+add
+
+drawable-hdpi
+dir
+
+
+
+add
+
+drawable-land
+dir
+
+
+
+add
+
+drawable-ldpi
+dir
+
+
+
+add
+
+drawable-mdpi
+dir
+
+
+
+add
+
+layout
+dir
+
+
+
+add
+
+layout-land
+dir
+
+
+
+add
+
+menu
+dir
+
+
+
+add
+
+values
+dir
+
+
+
+add
+
+values-hdpi
+dir
+
+
+
+add
+
+values-ko
+dir
+
+
+
+add
+
+values-land-hdpi
+dir
+
+
+
+add
+
+values-land-ldpi
+dir
+
+
+
+add
+
+values-port-hdpi
+dir
+
+
+
+add
+
+values-port-ldpi
+dir
+
+
+
+add
+
+xml
+dir
+
+
+
+add
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:id="@+id/frame_layer"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ImageView 
+			android:id="@+id/ImageView_Bg" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			> 
+			</ImageView>
+	<LinearLayout
+		android:background="@null"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal">
+			
+		<LinearLayout android:layout_width="0dip"
+			android:layout_height="fill_parent" 
+			android:layout_weight="1"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true" 
+			android:orientation="vertical">
+
+			<!-- Indicate number of correct and wrong  -->
+			<!--  
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="30dp" android:paddingLeft="5dip"
+				android:paddingRight="5dip" android:layout_marginTop="20dp"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/wrong" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:layout_weight="1" />
+				<TextView android:id="@+id/currect" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:layout_weight="1" />
+				<TextView
+            		android:id="@+id/memodate" android:layout_width="0dip" 
+            		android:layout_height="wrap_content" android:layout_weight="1" />   
+			</LinearLayout>
+-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="0dp" android:layout_weight="1"
+				android:layout_marginTop="20dp" android:orientation="horizontal"
+				android:gravity="center_vertical">
+				<TextView android:id="@+id/spell"
+					android:ellipsize="marquee" 
+					android:layout_width="0dip"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:padding="10dip" style="@style/LookupTitle" />
+
+			</LinearLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="0dp" android:layout_weight="1"
+				android:layout_marginTop="20dp">
+				<TextView android:id="@+id/mean" 
+					android:layout_width="wrap_content"
+					android:ellipsize="marquee"
+					android:layout_height="wrap_content" android:layout_centerInParent="true"
+					android:textColor="@color/tw_color002" android:typeface="sans"
+					android:textSize="22dip" />
+			</RelativeLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="0dp" android:layout_weight="1"
+				android:orientation="vertical">
+				<!--  <Chronometer android:id="@+id/chronometer"
+					android:format="@string/chronometer_initial_format"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingBottom="3dip" android:paddingTop="3dip" />-->
+
+				<FrameLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<Button android:id="@+id/check_mean" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center"
+					android:background="@drawable/shmean_button"/>
+				<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"
+					android:stretchColumns="*">
+					<TableRow
+					android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1">
+						<Button android:id="@+id/memory" 
+								android:background="@drawable/yes_button"
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_gravity="center"
+            					android:layout_weight="1"/>
+						<Button android:id="@+id/forget" 
+								android:background="@drawable/no_button"
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_weight="1"
+            					android:layout_gravity="center"/>								
+
+					</TableRow>
+					<TableRow
+					android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:layout_weight="1">					
+						<Button android:id="@+id/wed_dic" 
+								android:background="@drawable/dic_button" 
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_weight="1"
+            					android:layout_gravity="center"/>					
+						<Button android:id="@+id/wed_image" 
+								android:background="@drawable/image_button"  
+								android:layout_width="wrap_content"
+            					android:layout_height="wrap_content"
+            					android:layout_weight="1"
+            					android:layout_gravity="center"/>
+					</TableRow>							
+				</TableLayout>
+				</FrameLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" 
+			android:layout_alignParentTop="true"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true" android:background="@drawable/memo_bg_02_1">
+			<TextView android:id="@+id/extra_mean" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:gravity="center"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="@drawable/selector_text_primary"
+				android:textSize="16.00dp" android:inputType="none"
+				android:capitalize="sentences" android:includeFontPadding="false"
+				android:lineSpacingExtra="4.67dp" android:background="@null"
+				android:scrollbars="vertical" />
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<ProgressBar android:id="@+id/progress_bar"
+			style="?android:attr/progressBarStyleHorizontal" android:gravity="top"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:max="100" />
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_gravity="center"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:id="@+id/wrong" android:layout_width="0dip"
+				android:layout_height="wrap_content" android:layout_weight="1" />
+			<TextView android:id="@+id/currect" android:layout_width="0dip"
+				android:layout_height="wrap_content" android:layout_weight="1" />
+			<TextView android:id="@+id/memodate" android:layout_width="0dip"
+				android:layout_height="wrap_content" android:layout_weight="1" />
+		</LinearLayout>
+	</LinearLayout>
+
+
+</FrameLayout>

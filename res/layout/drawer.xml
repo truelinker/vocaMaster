@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<ViewSwitcher 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/ViewSwitcher_DiaryView"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+
+	</ViewSwitcher>
+	
+	<SlidingDrawer
+        android:id="@+id/slide_drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:handle="@+id/handle"
+        android:content="@+id/content"
+        android:bottomOffset="5px">        
+        <TextView 
+            style="@style/red_padded"
+            android:layout_height="fill_parent" 
+            android:layout_width="wrap_content"
+            android:id="@+id/handle"
+            android:background="#000000"
+            android:gravity="center" />            
+        <LinearLayout
+       		android:id="@id/content"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+       		<WebView 
+       			xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:id="@+id/webview"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"/>
+         </LinearLayout>
+    </SlidingDrawer>
+</FrameLayout>	

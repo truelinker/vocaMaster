@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Voca_Mem2
+Bundle-SymbolicName: Voca_Mem2
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.truelinker,
+ com.truelinker.filebrowser,
+ com.truelinker.service,
+ com.truelinker.voca_mem

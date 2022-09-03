@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- Portrait Mode -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="?android:attr/listPreferredItemHeight"
+		android:gravity="center_vertical"
+		android:background="@drawable/list_wc_bg"
+		android:layout_marginLeft="3.33dip"
+		android:layout_marginRight="3.33dip"
+		android:fitsSystemWindows="true">
+				<TextView android:id="@+id/step" android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="left"
+					android:typeface="sans" android:ellipsize="marquee"
+					android:singleLine="true" android:textSize="22dip"
+					android:textStyle="bold" android:textColor="@color/tw_color001"
+					android:shadowColor="@color/tw_color002" android:shadowDx="1"
+					android:shadowDy="1" android:shadowRadius="0.5"
+					android:fitsSystemWindows="true" />
+				<TextView android:id="@+id/elapse" android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1" 
+					android:gravity="right"
+					android:typeface="sans"
+					android:layout_alignParentRight="true" android:ellipsize="marquee"
+					android:singleLine="true" android:textSize="22dip"
+					android:textStyle="bold" android:textColor="@color/tw_color001"
+					android:shadowColor="@color/tw_color002" android:shadowDx="1"
+					android:shadowDy="1" android:shadowRadius="0.5"
+					android:fitsSystemWindows="true" />
+	</LinearLayout>
+	<View android:id="@+id/divider" android:background="@drawable/black_white_gradient"
+		android:layout_width="fill_parent" android:layout_height="10dp" />
+</LinearLayout>

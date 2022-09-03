@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout_editMain" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<com.truelinker.voca_mem.LinedEditText
+		android:id="@+id/diary_edit"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:paddingLeft="10.00dp"
+		android:paddingTop="24.00dp"
+		android:paddingRight="10.00dp"
+		android:paddingBottom="10.00dp"
+		android:gravity="left|top"
+		android:textColor="#ffffff"
+		android:textSize="16.00dp"
+		android:inputType="none" 
+		android:capitalize="sentences"
+		android:imeOptions="flagNoExtractUi"
+		android:includeFontPadding="false"
+		android:lineSpacingExtra="4.67dp"
+		android:background="@null"
+		android:scrollbars="vertical" />
+	<!--  
+    <FrameLayout
+        android:id="@+id/RelativeLayout_ButtonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="50.00dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView 
+            android:id="@+id/TextView_SaveIcon" 
+            android:layout_width="78.67dp"
+            android:layout_height="26.67dp"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center"
+            android:textSize="14.67dp" 
+            android:textStyle="bold"
+            android:text="save"
+            android:background="@drawable/mdiary_memo_edit" />
+        <TextView 
+            android:id="@+id/TextView_CancelIcon" 
+            android:layout_width="78.67dp"
+            android:layout_height="26.67dp"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:textSize="14.67dp" 
+            android:textStyle="bold"
+            android:text="cancel"
+            android:background="@drawable/mdiary_memo_edit" />
+    </FrameLayout>
+    -->
+</LinearLayout>

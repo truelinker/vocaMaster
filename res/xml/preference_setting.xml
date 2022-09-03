@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- This is a primitive example showing how some preferences can depend on other preferences. -->
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Repeat Setting">
+            
+        <CheckBoxPreference
+                android:key="repeat"
+                android:title="Repeat"
+                android:defaultValue="true" />            
+                
+		    <com.truelinker.voca_mem.TextSizePreference
+		  		android:key="repeat_count"
+                android:title="The number of Repeated vocabulary"
+                android:dependency="repeat"
+                android:defaultValue="5"
+                android:max="10"/>              
+            
+        <CheckBoxPreference
+        		android:layout="?android:attr/preferenceLayoutChild"
+                android:key="quiz"
+                android:title="Setting Quiz"
+                android:dependency="repeat"
+                android:defaultValue="true" />
+            
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Setting Timer">
+                
+		    <com.truelinker.voca_mem.TextSizePreference
+		  		android:layout="?android:attr/preferenceLayoutChild"
+		  		android:key="time_count"
+                android:title="Timer"
+                android:defaultValue="1"
+                android:max="10"/>              
+                                           
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="Order of Vocabulary">            
+    <CheckBoxPreference 
+    	android:layout="?android:attr/preferenceLayoutChild"
+		android:key="random_setting" 
+		android:title="Random" 		
+		android:defaultValue="false" />     
+	</PreferenceCategory>      	           
+	
+    <PreferenceCategory
+            android:title="Setting Letters">
+            
+ 		<com.truelinker.voca_mem.TextSizePreference  
+                android:title="Size"
+                android:key="spell_size"
+                android:defaultValue="4"
+                android:max="10"/>             
+                
+		<ListPreference
+           android:title="Color"
+           android:key="char_color"
+           android:defaultValue="1"
+           android:entries="@array/colors"
+           android:entryValues="@array/colors_values" />       
+            
+		<ListPreference
+           android:title="Font"
+           android:key="charface"
+           android:defaultValue="1"
+           android:entries="@array/typeface"
+           android:entryValues="@array/typeface_values" />                                     
+            
+    </PreferenceCategory>	
+                    
+</PreferenceScreen>

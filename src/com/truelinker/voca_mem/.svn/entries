@@ -1,0 +1,147 @@
+10
+
+dir
+0
+https://voca-master.googlecode.com/svn/trunk/src/com/truelinker/voca_mem
+https://voca-master.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be3494c7-06e9-f454-cb6b-9607218c55ad
+
+DataRecord.java
+file
+
+
+
+add
+
+DiaryEditActivity.java
+file
+
+
+
+add
+
+DiaryInputFilter.java
+file
+
+
+
+add
+
+Drawer.java
+file
+
+
+
+add
+
+FileList.java
+file
+
+
+
+add
+
+LinedEditText.java
+file
+
+
+
+add
+
+MemoApplication.java
+file
+
+
+
+add
+
+MiniDiaryDraw.java
+file
+
+
+
+add
+
+MultiChoiceData.java
+file
+
+
+
+add
+
+Multichoice.java
+file
+
+
+
+add
+
+SeekBarPreference.java
+file
+
+
+
+add
+
+SeekBarPreferenceDialog.java
+file
+
+
+
+add
+
+SettingsListActivity.java
+file
+
+
+
+add
+
+Steps_list.java
+file
+
+
+
+add
+
+TextSizePreference.java
+file
+
+
+
+add
+
+VocaDataManage.java
+file
+
+
+
+add
+
+Voca_Mem.java
+file
+
+
+
+add
+
